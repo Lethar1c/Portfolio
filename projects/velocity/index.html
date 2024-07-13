@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocity</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">    
+    <style>
+        .hide {
+            display: none;
+        }
+        #spinner {
+            position: absolute;
+            width: 10vw; 
+            height: 10vw;
+            background-color: transparent;
+            left: calc(50% - 5vw);
+            top: calc(50% - 5vw);
+            border-radius: 5vw;
+            border: 5px solid rgb(85, 85, 85);
+            border-top-color: rgb(219, 219, 219);
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="spinner"></div>
+
+    <header class="header hide">
+        <div class="container header__container">
+            <h1 class="logo">Velocity</h1>
+
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="#!">Home</a></li>
+                    <li><a href="#!">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main hide">
+        <section class="welcome">
+            <div class="container">
+                <h2 class="welcome__heading">this is velocity</h2>
+                <div class="welcome__links">
+                    <a href="#!" class="link-primary">sign up</a>
+                    <a href="#!" class="link">learn more</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about common-section">
+            <div class="container">
+                <div class="title-wrapper">
+                    <h3 class="title">what we do</h3>
+                    <p class="subtitle">This is some text inside of a div block.</p>
+                </div>
+
+                <div class="cards-wrapper">
+                    <div class="card">
+                        <img src="img/card-icon-1.svg" alt="icon">
+                        <h4>Graphic Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/card-icon-2.svg" alt="icon">
+                        <h4>Awesome code</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/card-icon-3.svg" alt="icon">
+                        <h4>free template</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services common-section--dark">
+            <div class="container">
+                <div class="title-wrapper">
+                    <h3 class="title">services</h3>
+                    <p class="subtitle">This is some text inside of a div block.</p>
+                </div>
+
+                <div class="cards-wrapper">
+                    <div class="big-card">
+                        <img src="img/services-1.jpg" alt="icon">
+                        <h4>Services one</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius.</p>
+                        <a href="#!" class="link">learn more</a>
+                    </div>
+                    <div class="big-card">
+                        <img src="img/services-2.jpg" alt="icon">
+                        <h4>Services two</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius.</p>
+                        <a href="#!" class="link">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tabs common-section">
+            <div class="container">
+                <div class="title-wrapper">
+                    <h3 class="title">tab section</h3>
+                    <p class="subtitle">This is some text inside of a div block.</p>
+                </div>
+
+                <div class="tab-wrapper">
+                    <div class="button-wrapper">
+                        <button class="active" onclick="changeTab(1)">tab 1</button>
+                        <button onclick="changeTab(2)">tab 2</button>
+                        <button onclick="changeTab(3)">tab 3</button>
+                    </div>
+                    <img src="img/tab-1.jpg" alt="tab-image" class="tab-image">
+                    <div class="tab-title-whapper">
+                        <h4>Some title here</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer hide">
+        <div class="footer__desc">
+            <div class="container footer__container">
+                <div class="footer__about">
+                    <h4>about velocity</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                </div>
+
+                <div class="footer__links">
+                    <h4>Useful links</h4>
+                    <ul>
+                        <li><a href="#!">Phasellus gravida semper nisi</a></li>
+                        <li><a href="#!">Suspendisse nisl elit</a></li>
+                        <li><a href="#!">Dellentesque habitant morbi</a></li>
+                        <li><a href="#!">Etiam sollicitudin ipsum</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__social">
+                    <h4>Social</h4>
+                    <ul>
+                        <li><img src="img/facebook.svg" alt="Facebook"><a href="">Facebook</a></img></li>
+                        <li><img src="img/googleplus.svg" alt="Google Plus"><a href="">Google Plus</a></img></li>
+                        <li><img src="img/pinterest.svg" alt="Pinterest"><a href="">Pinterest</a></img></li>
+                        <li><img src="img/twitter.svg" alt="Twitter"><a href="">Twitter</a></img></li>
+                        <li><img src="img/webflow.svg" alt="Webflow"><a href="">Webflow</a></img></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copy">
+            <div class="container">
+                <p>Copyright Velocity Inc. Made in Webflow.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function changeTab(tabId) {
+            var image = document.querySelector('.tab-wrapper img');
+            var all_buttons = document.querySelectorAll('.tab-wrapper button');
+            var clicked_button = all_buttons[tabId-1];
+            if (document.querySelector('.tab-wrapper button.active') == clicked_button) {
+                return;
+            }
+            else {
+                active_button = document.querySelector('.tab-wrapper button.active');
+                active_button.classList.remove('active');
+                clicked_button.classList.add('active');
+                clicked_button_id = clicked_button.textContent.slice(4);
+                image.setAttribute('src', 'img/tab-'+clicked_button_id+'.jpg')
+            }
+        }
+    </script>
+    <script>
+        window.addEventListener('load', function() {
+            var preloader = document.getElementById('spinner');
+            var header = document.getElementsByClassName('header')[0];
+            var main = document.getElementsByClassName('main')[0];
+            var footer = document.getElementsByClassName('footer')[0];
+            preloader.classList.add('hide');
+            header.classList.remove('hide');
+            main.classList.remove('hide');
+            footer.classList.remove('hide');
+        });
+
+    </script>
+</body>
+</html>

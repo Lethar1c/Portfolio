@@ -1,0 +1,178 @@
+/* ARROWS */
+.arrow {
+    border: solid black;
+    border-width: 0 0.125em 0.125em 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+
+/* COMMON */
+
+.container {
+    max-width: 69.375em;  /*1080 + 15 + 15*/
+    padding: 0.9375em;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+/* HEADER */
+
+.header {
+
+}
+
+.header__container {
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: #5A5A5A;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo > .logo-image {
+    width: 2.125em;
+    height: 2.125em;
+    margin-right: 1.125em;
+    background-image: url('../img/logo-image.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: #42766C;
+    font-weight: 700;
+}
+
+.header__container nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__container ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header__container ul > li + li {
+    margin-left: 2.5em;
+}
+
+.header__container ul > li {
+    position: relative;
+}
+
+.header__logo {
+    
+}
+
+.header__contact-button {
+    color: #FFFFFF;
+}
+
+.contact-button {
+    background-color: #F87661;
+    color: inherit;
+    font-size: 1em;
+    border-radius: 6px;
+    padding: 12px 23px;
+    box-shadow: 0px 1px rgba(0, 0, 0, 0.12);
+    max-width: 8rem;
+}
+
+a.contact-button {
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.header__container ul > li > a > i {
+    position: absolute;
+    bottom: 50%;
+    transform: rotate(45deg) translate(0%, 50%);
+}
+
+
+
+/* WELCOME */
+
+.main {
+}
+.welcome {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.welcome__info {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.welcome__decoration {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.welcome__decoration-1 {
+    width: 14vw;
+    height: 38vh;
+    background-color: #f875615b;
+    border-radius: 7vw;
+}
+.welcome__decoration-2 {
+    width: 18vw;
+    height: 50vh;
+    background-color: #F876615b;
+    border-radius: 9vw;
+}
+.welcome__title {
+    font-size: 3.25em;
+    line-height: 1.23;
+    color: #333333;
+    font-weight: bold;
+}
+.welcome__subtitle {
+    font-size: 1rem;
+    color: #828282;
+    padding: 2.1875em 0;
+}
+.contact-button {
+}
+
+
+
+.hide {
+    display: none;
+}
